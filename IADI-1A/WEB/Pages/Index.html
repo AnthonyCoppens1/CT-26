@@ -97,6 +97,95 @@
             <li>3rd item</li>
         </ul>
 
+        <br>
+        <!--tables -> tr = table row, td = table column, th = table header-->
+        <table border="2">
+            <tr>
+                <td>first row, first column</td>
+                <td>first row, second column</td>
+            </tr>
+            <tr>
+                <td>second row, first column</td>
+                <td>second row, second column</td>
+            </tr>
+        </table>
+
+        <table border="1">
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>Anthony</td>
+                <td>31</td>
+            </tr>
+            <tr>
+                <td>Jessica</td>
+                <td>22</td>
+            </tr>
+        </table>
+
+
+        <!--cellpadding vs cellspacing-->
+        <br>
+        <table border="3" cellpadding="10">
+            <tr><td>SOME TEXT TO CHECK</td></tr>
+        </table>
+
+        <table border="3" cellspacing="10">
+            <tr><td>SOME TEXT TO CHECK</td></tr>
+        </table>
+
+        <!--merging rows or columns-->
+        <!--merging rows-->
+        <br>
+        <table border="1">
+            <tr>
+                <td>1st row, 1st col</td>
+                <td rowspan="2">2nd col</td>
+            </tr>
+            <tr>
+                <td>2nd row, 1st col</td>
+            </tr>
+            <tr>
+                <td>3rd row, 1st col</td>
+            </tr>
+        </table>
+        <br>
+
+        <!--merging columns-->
+        <table border="1">
+            <tr>
+                <td>
+                    some text? 1st row 1st col
+                </td>
+                <td>
+                    some more text; 1st row, 2nd col
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">second row!!</td>
+            </tr>
+        </table>
+
+
+        <!--lil more on container elements-->
+        <div style="background-color: brown; color: aliceblue; padding: left 2 0px;">
+            <h2 style="text-align: center;">STURGEON LOVERS UNITE</h2>
+            <p>We come together biweekly, to jump into the pond and kiss all the possible
+                sturgeons that can be found. We mark each one we've kissed with a sticker. Whichever
+                kish has most stickers is crowned to be the stickerqueen. If you find one that transforms into
+                a human, you win the jackpot.
+            </p>
+        </div>
+
+
+        
+        <footer>
+            <p>Author: Myself?</p>
+            <p><a href="mailto:anthony.coppens@thomasmore.be">anthony.coppens@thomasmore.be</a></p>
+        </footer>
+
 
 
 

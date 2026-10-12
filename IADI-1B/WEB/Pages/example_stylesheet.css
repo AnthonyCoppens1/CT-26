@@ -1,0 +1,40 @@
+body{
+    text-align: center;
+    background-color: blueviolet;
+    background-image: url("../Images/stripes.jpg");
+    background-position: top;
+    background:no-repeat right top;
+    /*repeat-x or repeat-y*/
+}
+
+body.gradient{
+    background: linear-gradient(#E9967A, #BF40BF);
+    border-style: dotted;
+    border-width: 2px; /*choosing the amount of whitespace as the border around the whole body*/
+    border-color: blue;
+    border-radius: 50px;
+}
+
+/*p{
+    color:red; font-weight: bold; font-size: x-large;
+}*/
+h1,h2,h3{
+    text-align: end;
+    color: darkblue;
+}
+
+/*relation checking*/
+
+
+a:link, a:visited{
+    color:green;
+    background-color: aquamarine;
+    text-align: center;
+}
+
+a:hover, a:active{
+    color:black;
+}
+
+
+
