@@ -1,11 +1,27 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--1 vw = 1% of viewport if viewport = 50cm , 1vw 0.5cm-->
         <title>THE BIG UNEMPLOYMENT SURVEY</title>
+        <style>
+            footer{
+                text-align: center;
+                padding: 5px;
+                background-color: greenyellow;
+                color: black;
+            }
+
+            .IPickedTheName{
+                border: 20px outset black;
+                background-color: blueviolet;
+                text-align: right;
+            }
+        </style>
     </head>
 
     <body style="background-color: black; color: white;" class="bodyclass" >
-        <h1>THE BIG UNEMPLOYMENT SHOW OF ROHAN</h1>
+        <h1 style="font-size: 10vw;">THE BIG UNEMPLOYMENT SHOW OF ROHAN</h1>
         <a href="#FullTimeStudent">Full time student</a>
         <h2>Featuring Anthony as the lecturer</h2>        
         <h3>And all the students who might be unemployed</h3>        
@@ -20,13 +36,15 @@
 
         <!--This is all comments
         I can press tab and this is not taken into account when it comes to the page-->
-
-        <p>
-            <b>BOLD TEXT FOR BALD PEOPLE</b><br>
-            <i>ITALIC TEXT FOR ITALIAN PEOPLE</i><br>
-            <u>PUT A LINE UNDER HERE AS WELL AS UNDER YOUR PAYCHECK</u><br>
-            <u><b><i>THE ULTIMATE TEXT FOR UNEMPLYED PEOPLE</i></b></u><br>
-        </p>
+        <div class="IPickedTheName">
+            <p>
+                <b>BOLD TEXT FOR BALD PEOPLE</b><br>
+                <i>ITALIC TEXT FOR ITALIAN PEOPLE</i><br>
+                <u>PUT A LINE UNDER HERE AS WELL AS UNDER YOUR PAYCHECK</u><br>
+                <u><b><i>THE ULTIMATE TEXT FOR UNEMPLYED PEOPLE</i></b></u><br>
+            </p>
+        </div>
+        
 
         <strong>ANOTHER BOLD STATEMENT</strong> <!--more bold text with this tag-->
         <em>another way of doing italic</em><br>
@@ -104,11 +122,134 @@
         </ul>
 
 
+        <!--TABLES: th -> table header / tr -> table row / td -> table column -->
+        <table border="10">
+            <tr>
+                <td>first row, first column</td>
+                <td>first row, second column</td>
+            </tr>
+            <tr>
+                <td>2nd row, first column</td>
+                <td>2nd row, second column</td>
+            </tr>
+        </table>
+
+        <table border="1" cellpadding="10">
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>Anthony</td>
+                <td>31</td>
+            </tr>
+            <tr>
+                <td>Rohan</td>
+                <td>18</td>
+            </tr>
+        </table> 
+
+        <!--cellpadding vs cellspacing-->
+        <table border="5" cellpadding="50">
+            <tr><td>A LOT OF SPACE</td></tr>
+        </table>
+
+        <table border="5" cellspacing="50">
+            <tr><td>CHECKING FOR SPACE</td></tr>
+        </table> <br>
+
+        <!--merging rows and columns-->
+        <!--rows-->
+        <table border="1">
+            <tr>
+                <td>1st row, 1st col</td>
+                <td rowspan="2">2nd col</td>
+            </tr>
+            <tr>
+                <td>2nd row, 1st col</td>
+            </tr>
+        </table><br>
+
+        <!--columns-->
+        <table border="3">
+            <tr>
+                <td>1st row, column # 1</td>
+                <td>1st row, column # 2</td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">2nd row</td>
+            </tr>
+        </table><br>
+
+        <!--container elements, keep in mind, they span a whole line on your page-->
+        <div style="background-color: coral; color: cornflowerblue; padding: left 2 0px;">
+            <h2>Job applications</h2>
+            <p>
+                <span style="color: deeppink;">Applying for a job is not an easy task, it takes a lot 
+                of endurance to be able to go to any interview and sit through 
+                <span style="background-color: black; color: white;">multiple</span> rounds 
+                of questioning.</span> Sometimes you go home disappointed,
+                however, whenever you do get the job, you will be extremely happy.
+            </p>
+        </div>
+
+        <!--FORMS-->
+        <form action="" method="post">
+            Name: <input type="text" name="Name"><br>
+            <input type="password" name="Password"><br>
+            <input type="submit" value="Submit"><br>
+        </form><br>
+
+        <form> <!--choices? -> choice rounds-->
+            <input type="radio" name="gender" value="M" checked>Male<br>
+            <input type="radio" name="gender" value="F">Female<br>
+            <input type="radio" name="gender" value="X">X<br>
+            <input type="radio" name="gender" value="other">other<br>
+        </form>
+
+        <form>
+            textfield: <input type="text" name="text" size="40"><br>
+            checkmarks: <br>
+            choice 1: <input type="checkbox" name="check" value="c1" ><br>
+            choice 2: <input type="checkbox" name="check" value="c2" ><br>
+            textarea: <textarea rows="5" cols="30" name="txtarea">DEFAULT TEXT IN AREA, but it needs
+                to be manually deleted
+            </textarea>
+            dropdownlist:
+            <select name="ddl">
+                <option>option1</option>
+                <option>option2</option>
+                <option>option3</option>
+            </select><br>
+            <button type="button" onclick="alert('Hello World!')">CLICK ME!</button>
+        </form>
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!--some other examples of specific container elements-->
+        <h1>Heading x</h1>
+        <p>some random text before the end of my page?</p>
+        <footer>
+            <p>Author: Anthony</p>
+            <p><a href="mailto:anthony.coppens@thomasmore.be">anthony.coppens@thomasmore.be</a></p>
+        </footer>
 
         
-
 
     </body>
 </html>
