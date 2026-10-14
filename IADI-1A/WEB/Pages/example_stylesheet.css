@@ -1,0 +1,29 @@
+body{
+    background-image: url("../Media/superSturgeon.webp");
+    background-repeat: repeat-y;
+    background-position: center;
+    background-color: yellow;
+    border: red 2px;
+    border-style: dotted;
+    border-radius: 10px;
+    background: linear-gradient(rgb(145, 177, 41), #ff991c);
+    margin-left:10%;
+    text-indent: 10%;
+    letter-spacing: 3px;
+    word-spacing: 3px;
+    text-shadow: 1px 1px black;
+}
+
+h3, h4, h5, h6{
+    text-align: center;
+    color: plum;
+}
+
+a:link, a:visited{
+    color: darkgreen;
+}
+
+a:hover, a:active{
+    color:crimson;
+}
+

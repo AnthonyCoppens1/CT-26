@@ -1,11 +1,39 @@
 <html>
     <head>
         <title>STURGEON LOVERS</title>
-        
+        <link href="example_stylesheet.css" type="text/css" rel="stylesheet">
+        <style>
+            
+            footer{
+                text-align: center;
+                padding: 5px;
+                background-color:blueviolet;
+                color: white;
+            }
+            h2.PINK{
+                background-color: deeppink;
+                border: 10px outset black;
+            }
+            p.fall{
+                color:orange;
+            }
+
+            p#winter{
+                color: darkviolet;
+            }
+        </style>
     </head>
     <body style="background-color: rgb(145, 177, 41); color: cyan;" >
-        <h1 style="color: brown; text-align: center;">STURGEON FOR LIFE</h1>
-        <h2>Under the sea under the sea</h2>
+
+        <p class="fall">IT IS FALL TIME</p>
+        <p id="winter">WIIIIIIIINTER</p>
+        <p class="fall">Spring sprong sprung</p>
+        <p>BIG SUN TIME, <span style="background-color: darksalmon; font-size: xx-large; font-weight: bold; color: red;">MUCH BURN
+        </span>, VERY WOW</p>
+
+
+        <h1 style="color: brown; text-align: center; font-size: 10vw;">STURGEON FOR LIFE</h1>
+        <h2 class="PINK">Under the sea under the sea</h2>
         <h3>I am under da water</h3>
         <a href="#fishstick">RAGEBAITING KANYE WEST</a>
         
@@ -16,7 +44,7 @@
 
 
 
-        <p>The sturgeon, the love of my life</p>
+        <p class="PINK">The sturgeon, the love of my life</p>
         <p>Hopefully I can hold you one day, maybe kiss<br><br /><br>
             HAS NO IMPACT
         </p>
@@ -50,7 +78,7 @@
         <!--IMAGES-->
         <img src="sturgeon.jpeg" alt="PICTURE OF BIG FISH"><br>
         <img src="../Media/funny.webp" height="50%" width="20%"><br>
-        <img src="../Media/kawaii.jpg"  height="20%" width="20%"><br>
+        <img src="../Media/kawaii.jpg" style="max-width: 10%;height: auto;"><br>
 
         <!--AUDIO-->
         <audio controls>
@@ -179,8 +207,59 @@
             </p>
         </div>
 
-
+        <br><br>
+        <!--FORMS, it is what you think it is-->
         
+        <form action="" method="post">
+            <input type="text" name="Name"><br>
+            <input type="password" name="Password"><br>
+            <input type="submit" value="Submit">
+        </form>
+
+        <!--choice rounds-->
+        <form>
+            <input type="radio" name="favouriteFood" value="Worstenbroodje">Worstenbrood<br>
+            <input type="radio" name="favouriteFood" value="Carbonara">Carbonara<br>
+            <input type="radio" name="favouriteFood" value="Sancocho">Sancocho<br>
+            <input type="radio" name="favouriteFood" value="Surströmming">Surströmming<br>
+            <input type="radio" name="favouriteFood" value="Cachopo" checked>Cachopo<br>
+        </form>
+        <br>
+
+        <form>
+            textfield: <input type="text" name="text" size="40"><br>
+
+            checkmarks: <br>
+            <input type="checkbox" name="check" value="c1" checked> choice1<br>
+            <input type="checkbox" name="check" value="c2" checked> choice2<br>
+            <input type="checkbox" name="check" value="c3" checked> choice3<br>
+            <input type="checkbox" name="check" value="c4" checked> choice4<br>
+
+            textarea:
+            <textarea rows="3" cols="40" name="txtArea">DEFAULT TEXT</textarea><br>
+            dropdownlist:
+            <select name="DDL">
+                <option>option 1</option>
+                <option>option 2</option>
+                <option>option 3</option>
+            </select><br>
+
+            <button type="button" onclick="alert('Hello World!')">CLICK ME IF YOU DARE HIHI</button>
+        </form>
+
+        <!--iframe-->
+        <iframe src="https://windows93.net/"></iframe>
+
+
+
+
+
+
+
+
+
+
+
         <footer>
             <p>Author: Myself?</p>
             <p><a href="mailto:anthony.coppens@thomasmore.be">anthony.coppens@thomasmore.be</a></p>
