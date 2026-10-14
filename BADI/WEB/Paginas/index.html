@@ -1,22 +1,43 @@
 <html>
     <head>
         <title>Appels zijn groen of rood</title>
+        <link href="stylesheet.css" type="text/css" rel="stylesheet">
         <style>
             h2.tweedeTitel{color: cyan;}
+
+            body{
+                background-color: darkseagreen;
+            }
+
+            h2.winter{
+                background-color: aqua;
+                color: brown;
+            }
+
+            .UNIVERSEEL{
+                text-shadow: 3px 2px red;
+            }
+            
+            h2#zomer{
+                color: gold;
+            }
+
         </style>
         
     </head>
-    <body style="background-color: firebrick; color:rgb(1, 255, 1)">
+    <body style="color:rgba(241, 22, 22, 0.546)">
         <!--Pure commentaar
         meerdere lijnen-->
         <a href="#TimCook">Tim Cook</a><br>
 
-        <h1 style="text-align: center;">APPELS en enkel appels</h1>
+        <h1 style="text-align: center; background-color: rgba(0, 0, 255, 0.991);">APPELS en enkel appels</h1>
 
-        <h2 class="tweedeTitel">Bananen zijn te geel</h2>
-        <h2>NIETS</h2>
+        <h2 class="UNIVERSEEL">HERFST</h2>
+        <h2 class="winter">WINTER</h2>
+        <h2>LENTE</h2>
+        <h2 id="zomer">ZOMER</h2>
 
-        <h3>Rest van het fruit boeit niet</h3>
+        <h3 class="UNIVERSEEL">Rest van het fruit boeit niet</h3>
 
         
         <p>Appels zijn gezond, rond, rood of groen, je kan er heel wat mee doen.</p>
@@ -32,17 +53,21 @@
 
 
         <p style="background-color: coral;">
-            <b>Deze tekst is niets van appels, maar wel heel VET</b><br>
+            <b>Deze tekst is niets 
+                van <span style="color: burlywood;background-color: aliceblue;">appels</span>, 
+                maar wel heel VET</b><br>
             <i>Deze tekst is enkel SCHUIN</i><br>
             <u>Volledig onderstreept.</u><br>
         </p>
-        <strong>Ook vette tekst</strong>
-        <em>Ook schuingedrukt</em><br>
+        <div style="background-color: coral;">
+            <strong>Ook vette tekst</strong>
+            <em>Ook schuingedrukt</em><br>
 
-        <!--hyperlinks-->
-        <a href="appel.html" target="_blank">klik voor appel</a><br>
-        <a href="appel.webp" target="_blank">APPEL</a>
-        <a href="mailto:anthony.coppens@thomasmore.be">Mail naar Anthony</a>
+            <!--hyperlinks-->
+            <a href="appel.html" target="_blank">klik voor appel</a><br>
+            <a href="appel.webp" target="_blank">APPEL</a>
+            <a href="mailto:anthony.coppens@thomasmore.be">Mail naar Anthony</a>
+        </div>
 
         <!--website openen-->
         <h4><a id="TimCook">Tim Cook</a></h4>
@@ -61,9 +86,9 @@
         </audio><br>
 
         <!--VIDEO-->
-        <video controls>
+        <!--<video controls>
             <source src="../Media/appelsien.mp4" type="video/mp4">
-        </video>
+        </video>-->
 
         <!--lijsten-->
         <!--unordered list -> UL of ordered list OL-->
@@ -91,6 +116,116 @@
             <li>hoofdstuk 2</li>
             <li>hoofdstuk 3</li>
         </ul>
+        <br>
+
+        <!--tabellen, tr = table row, td = kolom, th = table header -->
+        <table border="1">
+            <tr>
+                <td>eerste rij, eerste kolom</td>
+                <td>eerste rij, tweede kolom</td>
+                <td>eerste rij, derde kolom</td>
+            </tr>
+            <tr>
+                <td>tweede rij, eerste kolom</td>
+                <td>tweede rij, tweede kolom</td>
+            </tr>
+        </table>
+        <br>
+        <!-- voorbeeld met een table header-->
+        <table border="1">
+            <tr>
+                <th>Naam</th>
+                <th>Lievelingsgerecht</th>
+            </tr>
+            <tr>
+                <td>Erik</td>
+                <td>Pokebowl</td>
+            </tr>
+            <tr>
+                <td>Walid</td>
+                <td>Tajin</td>
+            </tr>
+            <tr>
+                <td>Victor</td>
+                <td>Sushi</td>
+            </tr>
+        </table>
+        <br>
+
+        <!--cellspacing vs cellpadding-->
+        <table border="1" cellpadding="10">
+            <tr>
+                <td>text ter controle</td>
+            </tr>
+        </table>
+
+        <br>
+        <table border="1" cellspacing="10">
+            <tr>
+                <td>text ter controle</td>
+            </tr>
+        </table>
+
+        <!--mergen van rijen of kolommen-->
+        <br> <!--KOLOMMEN-->
+        <table border="1">
+            <tr>
+                <td>1e rij, 1e kolom</td>
+                <td rowspan="2">2e kolom</td>
+            </tr>
+            <tr>
+                <td>2e rij, 1e kolom</td>
+            </tr>
+        </table>
+
+        <!-- een volledige rij mergen-->
+        <br>
+        <table border="1">
+            <tr>
+                <td>RIJ 1 KOL 1</td>
+                <td>RIJ 1 KOL 2</td>
+            </tr>
+            <tr>
+                <td colspan="2">KOL 2</td>
+            </tr>
+        </table>
+
+        
+        <!--forms-->
+        <form action="" method="post">
+            <input type="text" name="Gebruikersnaam"><br>
+            <input type="password" name="Wachtwoord"><br>
+            <input type="submit" value="Doorsturen">
+        </form>
+
+        <form> <!--keuzerondjes-->
+            <input type="radio" name="lievelingskeur" value="Groen">Groen<br>
+            <input type="radio" name="lievelingskeur" value="Blauw" checked>Blauw<br>
+            <input type="radio" name="lievelingskeur" value="Zwart">Zwart<br>
+            <input type="radio" name="lievelingskeur" value="Rood">Rood<br>
+        </form>
+
+        <!--al de rest-->
+        <form>
+            tekstveld: <input type="text" name="tekst" size="40"><br>
+            afvinkvakjes: <br>
+            <input type="checkbox" name="check" value="K1">Keuze1<br>
+            <input type="checkbox" name="check" value="K2">Keuze2<br>
+            <input type="checkbox" name="check" value="K3">Keuze3<br>
+            <input type="checkbox" name="check" value="K4" checked>Keuze4<br>
+            groter tekstveld: <br>
+            <textarea rows="3" cols="30" name="tekstArea">DEFAULT TEKST</textarea><br>
+            
+            dropdownlist: <br>
+            <select name="ddl">
+                <option>optie 1</option>
+                <option>optie 2</option>
+                <option>optie 3</option>
+                <option>optie 4</option>
+            </select><br>
+            <button type="button" onclick="alert('Hello World!')">KLIK OP MIJ</button>
+        </form>
+
 
     </body>
 </html>
