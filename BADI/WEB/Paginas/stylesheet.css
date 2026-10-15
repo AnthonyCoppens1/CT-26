@@ -8,3 +8,25 @@ h1, h2, h3, h4, h5, h6, p{
 }
 /*commentaar indien nodig*/
 
+body{
+    background-image: url("../Media/kleineAppel.avif");
+    background-position: right top;
+    background-repeat: repeat-y;
+    border-style: dotted;
+    border-width: 10px;
+    border-color:lightsalmon;
+    border-radius: 10px;
+    text-shadow: 2px 2px rgb(131, 209, 250);
+    word-spacing: 5px;
+    letter-spacing: 5px;
+    text-indent: 10px;
+    margin-left: 0px;
+}
+
+a:link, a:hover{
+    color: black;
+}
+a:visited, a:active{
+    color: rgb(3, 255, 41);
+}
+
